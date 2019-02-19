@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SignIn</title>
+    <style>
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  padding: 24px 0px 5px 30px;
+  font-family: "Lato", sans-serif;
+}
+nav{
+    position: fixed;
+    top: 3%;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(128,128,128);
+    width: 97.5%;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+ nav a:hover {
+    color: black;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:rgb(128,128,128,0.5);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background-color: rgb(128,128,128,0.9);
+}
+
+.container {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    right: 20%;
+    border-radius: 5px;
+    background-color:rgb(128,128,128,0);
+    padding: 20px;
+}
+.text{
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: bold;
+  color: white;
+
+}
+</style>
+
+  </head>
+  <body>
+  <link rel="icon" href="images/Favicon-1.png" type="image/gif" sizes="16x16">
+  <img src="images/back1.jpg" alt="Loading..." width="100%" height="750px">
+  <nav>
+  <a href="index.html"name="1">Home</a>
+  <a href="images/resume.pdf" download>Download</a>
+  <a href="signin.html" name="3">SignIn</a>
+</nav>
+  <div class="container">
+    <form action="validation.php">
+      <div class="text">
+
+
+        <label for="emailid">Email</label>
+        <input type="email" id="emailid" name="emailid" placeholder="someone@something.com"
+        pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b"required>
+
+
+        <label for="password">Password</label>
+        <input type="password"  id="password" name="password" placeholder="Enter Password" required>
+    </div>
+      <input type="submit" value="SignIn">
+  </form>
+  <a href="signup.html" style="text-decoration: none">
+    <input type="submit" value="Register"></a>
+  </div>
+  </body>
+</html>
